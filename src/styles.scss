@@ -1,1 +1,44 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./styles/variables";
+
+body {
+    font-family: $font-family;
+}
+
+
+.container {
+    max-width: 1200px;
+    width: 80%;
+    margin: auto;
+}
+
+.section_header {
+    padding-top: 50px;
+}
+
+
+.section:not(:first-child) {
+    margin: 50px 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 100;
+    margin-bottom: 30px;
+}
+h3 {
+    font-size: 1.5rem;
+}
+
+
+.background_cover {
+  background-position: center center fixed;
+  background-repeat: no-repeat; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+
+.margin-bottom {
+    margin-bottom: 30px;
+}

@@ -1,0 +1,22 @@
+@import "../../../styles/variables";
+
+.hyp_header {
+    background: #223470;
+    padding: 20px 40px;
+    width: 100%;
+    position: fixed;
+}
+
+.hyp_header_right{
+    float: right;
+}
+
+
+.hyp_btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #ccc;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: $border-raduis;
+}
