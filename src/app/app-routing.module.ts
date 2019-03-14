@@ -9,7 +9,6 @@ import { Routes, RouterModule } from '@angular/router';
 //Layouts
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
 import { DetailsComponent as PromotionDetailsComponent } from './views/promotions/details/details.component';
-import { IndexComponent as PromotionsIndexComponent } from './views/promotions/index/index.component';
 
 /**
  * Definição de Rotas do app

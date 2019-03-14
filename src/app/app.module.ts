@@ -12,7 +12,6 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { DetailsComponent } from './views/promotions/details/details.component';
 import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component';
-import { IndexComponent } from './views/promotions/index/index.component';
 
 import { PromotionService } from './domains/promotions/promotion.service';
 import { ApiService } from './services/api';
@@ -24,8 +23,7 @@ import { ApiService } from './services/api';
   declarations: [
     AppComponent,
     DetailsComponent,
-    BaseLayoutComponent,
-    IndexComponent
+    BaseLayoutComponent
   ],
   imports: [
     BrowserModule,
