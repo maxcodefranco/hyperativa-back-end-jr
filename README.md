@@ -15,7 +15,7 @@ Esta é a parte client da aplicação.
 
 ### Gerar Documentação - npm doc
 
-Para gerar a documentação, execute o comando `npm doc`, os arquivos de documentação serão gerados na pasta /doc.
+Para gerar a documentação, execute o comando `npm run doc`, os arquivos de documentação serão gerados na pasta /doc.
 
 ## Contato
 
