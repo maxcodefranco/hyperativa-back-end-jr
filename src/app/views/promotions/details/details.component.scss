@@ -62,8 +62,30 @@
             display: block;
             padding: 15px;
             text-align:center;
+            border: 2px solid $color-secondary;
             background: $color-secondary;
             border-radius: $border-raduis;
+            text-decoration: none;
+            transition: background ease .2s;
+
+            .arrow {
+                opacity: 0;
+                transform: translate(-10px,0);
+                transition:
+                    opacity ease .2s,
+                    transform ease .2s;
+            }
+
+            &:hover {
+                background: transparent;
+                color: #fff;
+                transform: scale(1.05);
+
+                .arrow {
+                    opacity: 1;
+                    transform: translate(0,0);
+                }
+            }
         }
     }
 
@@ -92,6 +114,7 @@
             flex: 1;
             padding: 0 30px;
             text-align: center;
+            transition: scale ease 1s;
 
             .step_title {
                 color: $color-secondary;
@@ -100,7 +123,6 @@
 
                 span {
                     display: inline-block;
-                    border: 0px solid $color-secondary;
                     background: $color-secondary;
                     color: #fff;
                     margin: auto;
@@ -108,6 +130,13 @@
                     height: 80px;
                     padding-top: 10px;
                     border-radius: 100%;
+                }
+            }
+
+            &:hover {
+                transform: scale(1.1);
+                .step_title span {
+                    background: $color-primary;
                 }
             }
         }
@@ -120,7 +149,7 @@
 .section_calendar {
     background: $color-secondary;
     color: #fff;
-    padding:40px 0;
+    padding:50px 0;
     text-align: center;
 
     .text_title {
@@ -128,17 +157,32 @@
 
     .calendar_date {
         color: $color-primary;
+        font-weight: 700;
     }
 }
 
 
 .section_faq {
+    margin-bottom: 100px;
+
+    .section_faq_header {
+        background: #223470;
+        color: #fff;
+        padding: 50px 0;
+        margin-bottom: 50px;
+        text-align: center;
+
+        .text_title {
+            margin: 0;
+        }
+    }
 
     .questions {
 
         .question {
             margin-bottom: 30px;
             font-weight: 100;
+            border-bottom: 2px dotted #eee;
 
             a.question_title {
                 color: #223470!important;
@@ -147,35 +191,37 @@
                 margin: 10px 0 10px 0;
                 width: 100%;
                 display: block;
-                padding: 10px 0 10px 40px;
+                padding: 10px 40px 10px 0px;
                 position: relative;
                 cursor: pointer;
 
-                &::before {
+                &::after {
                     content: " ";
                     background: url($websiteUrl+'arrow-faq-collapsed.png') no-repeat center center;
                     display: inline-block;
                     width: 30px;
                     height: 30px;
                     position: absolute;
-                    left: 0;
+                    right: 0;
                     top: 12px;
                 }
             }
 
             .question_answer {
-                height: 0;
+                max-height: 0;
                 overflow: hidden;
                 padding-left: 40px;
+                transition: max-height ease .6s;
             }
 
             &.opened {
-                a.question_title::before {
+                a.question_title::after {
                     transform: rotate(90deg)
                 }
 
                 .question_answer {
                     height: auto;
+                    max-height: 150px;
                 }
             }
 
@@ -190,4 +236,5 @@
     font-weight: 100;
     margin-top: 40px;
     margin-bottom: 80px;
+    text-align: center;
 }

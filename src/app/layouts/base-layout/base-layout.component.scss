@@ -5,18 +5,43 @@
     padding: 20px 40px;
     width: 100%;
     position: fixed;
+    z-index: 20;
+
+
+    input.input_form,
+    a.input_form {
+        color: #ccc;
+    }
+    .input_form {
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: inline-block;
+        text-transform: uppercase;
+        border-radius: $border-raduis;
+        text-decoration: none;
+        transition: background ease .6s, color ease .6s;
+
+
+        &:hover {
+            background: #fff;
+            color:#223470;
+        }
+
+    }
+
+    select.input_form {
+        margin-right: 10px;
+    }
+
+    span {
+        font-weight: 700;
+        color: #ccc;
+        display: inline-block;
+        margin: 0 20px;
+    }
 }
 
 .hyp_header_right{
     float: right;
 }
 
-
-.hyp_btn {
-    padding: 10px;
-    border: 1px solid #ccc;
-    color: #ccc;
-    display: inline-block;
-    text-transform: uppercase;
-    border-radius: $border-raduis;
-}

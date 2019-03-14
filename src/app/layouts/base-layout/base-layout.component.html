@@ -1,7 +1,11 @@
 <main>
   <header class="hyp_header">
     <div class="hyp_header_right">
-      <a href="#" class="hyp_btn">Entrar</a>
+      <span>Escolha uma das promoções</span>
+      <select (change)="selectPromotion($event)" class="input_form" >
+        <option *ngFor="let p of promotions" [value]="p.id">{{p.title}}</option>
+      </select>
+      <a href="#" class="input_form">Entrar</a>
     </div>
   </header>
 

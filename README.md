@@ -1,27 +1,22 @@
-# Hyperativa
+# Teste Hyperativa - Back-End Jr
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.2.
+Projeto desenvolvido em [Angular CLI](https://github.com/angular/angular-cli) versão 7.2.2.
 
-## Development server
+Esta é a parte client da aplicação.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Requisitos
+* Nodejs
 
-## Code scaffolding
+## Instalação
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* Execute `npm install` para instalar os pacotes necessários para a aplicação e documentação.
 
-## Build
+## Comandos
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+### Gerar Documentação - npm doc
 
-## Running unit tests
+Para gerar a documentação, execute o comando `npm doc`, os arquivos de documentação serão gerados na pasta /doc.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Contato
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Max Franco <maxcodefranco@gmail.com>

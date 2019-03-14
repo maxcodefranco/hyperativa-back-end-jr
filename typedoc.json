@@ -1,0 +1,6 @@
+
+{
+    "mode": "modules",
+    "src":"src/app",
+    "out": "docs"
+}

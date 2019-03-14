@@ -1,3 +1,8 @@
+/**
+ * @module App
+ * @author Max Franco <maxcodefranco@gmail.com>
+ */
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
@@ -6,15 +11,14 @@ import { BaseLayoutComponent } from './layouts/base-layout/base-layout.component
 import { DetailsComponent as PromotionDetailsComponent } from './views/promotions/details/details.component';
 import { IndexComponent as PromotionsIndexComponent } from './views/promotions/index/index.component';
 
+/**
+ * Definição de Rotas do app
+ */
 const routes: Routes = [
   {
     path:'',
     component: BaseLayoutComponent,
     children: [
-      {
-        path: '',
-        component: PromotionsIndexComponent
-      },
       {
         path:':promotion',
         component: PromotionDetailsComponent
